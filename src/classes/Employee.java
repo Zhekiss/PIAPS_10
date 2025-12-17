@@ -2,7 +2,7 @@ package classes;
 
 public abstract class Employee {
 
-	private int ssNo;
+	private int ssNo; //Social Security
 	private String name;
 	private String email;
 	private static int counter;
