@@ -18,10 +18,6 @@ public class Faculty {
 		this.name = name;
 	}
 
-	/**
-	 *
-	 * @param dean
-	 */
 	public void setDean(Employee dean) {
 		this.dean = dean;
 	}

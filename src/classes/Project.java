@@ -47,18 +47,7 @@ public class Project {
 
 	public int calculateDuration() {
 		if (start != null && end != null) {
-			int baseDuration = (int) ((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
-			if (participations != null && !participations.isEmpty()) {
-				int totalHours = 0;
-				for (Participation p : participations) {
-					totalHours += p.getHours();
-				}
-				if (totalHours > 0) {
-					double efficiency = totalHours / 8.0;
-					return (int) Math.max(1, baseDuration / efficiency);
-				}
-			}
-			return baseDuration;
+			return (int) ((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
 		}
 		return 0;
 	}
